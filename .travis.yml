@@ -23,6 +23,7 @@ install:
 
 before_script:
   - docker-compose up --build -d
+  - docker ps -a
 
 script:
   - bash -x ./test.sh
